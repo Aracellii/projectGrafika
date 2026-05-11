@@ -141,6 +141,7 @@ class VectorPaintApp(QWidget):
     # titik tengah untuk transformasi
     def _set_origin(self, item):
         if item: item.setTransformOriginPoint(item.boundingRect().center())
+    
 
     def on_press(self, pos):
         self.press_pos = self.drag_pos = pos
